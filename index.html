@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="side-menu-container">
+  <img src="side-icons/reshot-icon-weather-8CKJB9YN7X.svg" class="logo">
+
+  <div class="side-menu-options">
+    <img src="side-icons/weather-sunny-and-cloudy-svgrepo-com.svg" class="icon">
+    <div class="side-menu-labels">Weather</div>
+  </div>
+
+  <div class="side-menu-options">
+    <img src="side-icons/list-svgrepo-com.svg" class="icon">
+    <div class="side-menu-labels">Cities</div>
+</div>
+  
+
+  <div class="right-side-container">
+    <div class="right-side-wrapper">
+
+      <div class="forecast">7-DAY FORECAST</div>
+
+      <div class="day">
+        <div class="day-forecast">Today</div>
+        <div class="day-weather">
+          <img src="weather-icons/sun-146.svg" class="weather-icon">
+          <div>Sunny</div>
+        </div>
+        <div>36/22</div>
+      </div>
+
+      <hr>
+
+      <div class="day">
+        <div class="day-forecast">Tue</div>
+        <div class="day-weather">
+          <img src="weather-icons/sun-146.svg" class="weather-icon">
+          <div>Sunny</div>
+        </div>
+        <div>37/21</div>
+      </div>
+
+      <hr>
+
+      <div class="day">
+        <div class="day-forecast">Wed</div>
+        <div class="day-weather">
+          <img src="weather-icons/sun-146.svg" class="weather-icon">
+          <div>Sunny</div>
+        </div>
+        <div>37/21</div>
+      </div>
+
+      <hr>
+
+      <div class="day">
+        <div class="day-forecast">Thu</div>
+        <div class="day-weather">
+          <img src="weather-icons/cloudy-136.svg" class="weather-icon">
+          <div>Cloudy</div>
+        </div>
+        <div>37/21</div>
+      </div>
+
+      <hr>
+
+      <div class="day">
+        <div class="day-forecast">Fri</div>
+        <div class="day-weather">
+          <img src="weather-icons/cloudy-136.svg" class="weather-icon">
+          <div>Cloudy</div>
+        </div>
+        <div>37/21</div>
+      </div>
+
+      <hr>
+
+      <div class="day">
+        <div class="day-forecast">Sat</div>
+        <div class="day-weather">
+          <img src="weather-icons/rain-74.svg" class="weather-icon">
+          <div>Rainy</div>
+        </div>
+        <div>37/21</div>
+      </div>
+
+      <hr>
+
+      <div class="day">
+        <div class="day-forecast">Sun</div>
+        <div class="day-weather">
+          <img src="weather-icons/lightning-85.svg" class="weather-icon">
+          <div>Storm</div>
+        </div>
+        <div>37/21</div>
+      </div>
+    </div>
+  </div>
+
+
+  <main class="main-container">
+
+    <div class="input-search-results">
+      <input type="text" placeholder="Search for cities" class="search-field">
+      <div class="search-results-container">
+        
+      </div>
+    </div>
+
+
+    <div class="current-city-container">
+      <div class="city-stats">
+        <div>
+          <div class="city"></div>
+          <div class="city-rain-chance">Chance of rain: 0%</div>
+        </div>
+        <div class="city-degree"></div>
+      </div>
+       <img  class="current-city-weather-icon">
+    </div>
+
+    <div class="today-forecast-container">
+      <div class="today-forecast">TODAY'S FORECAST</div>
+      <div class="forecast-wrapper">
+
+        <div class="time-a-day">
+          <div class="time">6:00 AM</div>
+          <img src="weather-icons/cloudy-136.svg" class="today-weather-icon">
+          <div class="degree">25&#xb0;</div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="time-a-day">
+          <div class="time">9:00 AM</div>
+          <img src="weather-icons/cloud-321.svg" class="today-weather-icon">
+          <div class="degree">28&#xb0;</div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="time-a-day">
+          <div class="time">12:00 PM</div>
+          <img src="weather-icons/sun-146.svg" class="today-weather-icon">
+          <div class="degree">33&#xb0;</div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="time-a-day">
+          <div class="time">3:00 PM</div>
+          <img src="weather-icons/sun-146.svg" class="today-weather-icon">
+          <div class="degree">34&#xb0;</div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="time-a-day">
+          <div class="time">6:00 PM</div>
+          <img src="weather-icons/sun-146.svg" class="today-weather-icon">
+          <div class="degree">32&#xb0;</div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="time-a-day">
+          <div class="time">9:00 PM</div>
+          <img src="weather-icons/cloud-321.svg" class="today-weather-icon">
+          <div class="degree">30&#xb0;</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="air-consition-container">
+
+      <div class="wrapper1">
+        <div class="air-conditions">AIR CONDITIONS</div>
+        <button class="see-more">see more</button>
+      </div>
+      
+      <div class="wrapper2">
+
+        <div class="div1">
+
+          <div class="real-feel">
+            <img src="weather-icons/temperature-svgrepo-com.svg" class="air-conditions-icons">
+            <div class="label-degree">
+              <div class="air-conditions-label">Real Feel</div>
+              <div class="air-conditions-degree"></div>
+            </div>
+          </div>
+
+          <div class="chance-of-rain">
+            <img src="weather-icons/raindrop-svgrepo-com.svg" class="air-conditions-icons">
+            <div class="label-degree">
+              <div class="air-conditions-label">Chance of Rain</div>
+              <div class="air-conditions-degree">0%</div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="div2">
+
+          <div class="wind">
+            <img src="weather-icons/wind-55.svg" class="air-conditions-icons">
+            <div class="label-degree">
+              <div class="air-conditions-label">Wind</div>
+              <div class="air-conditions-degree js-wind"></div>
+            </div>
+          </div>
+
+
+          <div class="uv-index">
+            <img src="weather-icons/uv-index-filled-svgrepo-com.svg" class="air-conditions-icons">
+            <div class="label-degree">
+              <div class="air-conditions-label">UV Index</div>
+              <div class="air-conditions-degree">3</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script type="module" src="app.js"></script>
+</body>
+</html>
